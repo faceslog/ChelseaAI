@@ -1,0 +1,6 @@
+models/*.bin
+myenv/
+identities/*.txt
+test.wav
+en.pt
+__pycache__/
