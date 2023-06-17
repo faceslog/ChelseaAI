@@ -2,10 +2,10 @@ from silero_tts import SileroTTS
 from chat import Chat
 
 # Create a new chat session
-# chat = Chat(model_path="./models/ggml-v3-13b-hermes-q5_1.bin", identity_path="./identities/chelsea.txt")
+#chat = Chat(model_path="./models/ggml-v3-13b-hermes-q5_1.bin", identity_path="./identities/chelsea.txt")
 chat = Chat(model_path="./models/ggml-v3-13b-hermes-q5_1.bin")
-print(chat.get_chat_log())
 
+# tts = SileroTTS("ru", "v3_1_ru", "baya")
 tts = SileroTTS("en", "v3_en", "en_21")
 
 while True:

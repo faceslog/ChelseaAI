@@ -3,4 +3,5 @@ myenv/
 identities/*.txt
 test.wav
 en.pt
+ru.pt
 __pycache__/
