@@ -12,7 +12,7 @@ class SileroTTS:
         self.sample_rate = 48000
 
         torch.set_num_threads(12)
-        local_file = f'{language}.pt'
+        local_file = f'./models/silero/{language}.pt'
         
         if not os.path.isfile(local_file):
             torch.hub.download_url_to_file(f'https://models.silero.ai/models/tts/{language}/{model}.pt', local_file)

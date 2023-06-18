@@ -29,6 +29,8 @@ class Chat:
         # Tokenize the prompt
         prompt_tokens = self.llm.tokenize(prompt.encode())
 
+        # !! TO DO !! I'm currently removing what was said and keeping only the personality of the assistant
+        # would be great to find a more efficient way to do it while preserving the context of the conversation
         # If the number of tokens in the prompt exceeds n_ctx
         size = len(prompt_tokens) + self.max_tokens
 

@@ -1,7 +1,6 @@
-models/*.bin
+models/llm/*.bin
+models/silero/*.pt
 myenv/
 identities/*.txt
 test.wav
-en.pt
-ru.pt
 __pycache__/
